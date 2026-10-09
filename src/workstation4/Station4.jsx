@@ -560,7 +560,7 @@ export default function Station4() {
   // DEBUG HELPER ACTIONS
   // --------------------------------------------------------------------------
   const debugActions = {
-        skipModuleA: () => {
+    skipModuleA: () => {
       setModuleAAnswers({
         q_mod_a_1: { selectedKey: "B", isCorrect: true, wrongAttempts: 0 },
         q_mod_a_2: { selectedKey: "D", isCorrect: true, wrongAttempts: 0 },
@@ -588,7 +588,7 @@ export default function Station4() {
       setCurrentModule("C");
       addLog("[DEBUG] CIRCUIT SOLVED WITH AND GATE & INPUTS SET TO 1", "info");
     },
-        setAllTolerancesSafe: () => {
+    setAllTolerancesSafe: () => {
       setToleranceValues({
         powerStability: 97,
         temperature: 35,
@@ -650,12 +650,12 @@ export default function Station4() {
           isTimedOut
             ? "TIMEOUT"
             : isCompleted
-            ? "AUTHORIZED"
-            : isBypassActive
-            ? "BYPASS ACTIVE"
-            : shiftStarted
-            ? "ACTIVE"
-            : "STANDBY"
+              ? "AUTHORIZED"
+              : isBypassActive
+                ? "BYPASS ACTIVE"
+                : shiftStarted
+                  ? "ACTIVE"
+                  : "STANDBY"
         }
         onDebugClick={() => setDebugOpen(true)}
         onOpenLeaderboard={() => setLeaderboardOpen(true)}
