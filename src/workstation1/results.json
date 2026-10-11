@@ -118,5 +118,35 @@
       "score": 30,
       "broadcastVerified": true
     }
+  },
+  {
+    "id": "ws1_f1_1791692835333_jllq1",
+    "stationId": "station-1",
+    "stationName": "F1 0-Lag Stream",
+    "operator": "Akash",
+    "completed": true,
+    "score": 65,
+    "finalLatency": 0.95,
+    "timeRemaining": 659,
+    "timeRemainingSeconds": 659,
+    "timeUsedSeconds": 61,
+    "errors": 7,
+    "hintsUsed": 0,
+    "hintsUsedCount": 0,
+    "timestamp": "2026-10-11T04:27:15.333Z",
+    "moduleA": {
+      "completed": true,
+      "score": 5
+    },
+    "moduleB": {
+      "completed": true,
+      "score": 30,
+      "latencyTargetAchieved": true
+    },
+    "moduleC": {
+      "completed": true,
+      "score": 30,
+      "broadcastVerified": true
+    }
   }
 ]
